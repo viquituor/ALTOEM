@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gerador Alto Em...</title>
+  <!-- Importa a biblioteca para converter HTML em imagem -->
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+</head>
+<body>
+
+  <div id="embalagem-preview" class="embalagempreview">
+      <img class="img-rotulo" src="./altoem.jpeg" alt="">
+  </div>
+
+  <!-- Painel de interação -->
+  <div class="controles">
+    <div class="altooubaixo">
+        <button onclick="alto()">alto</button>
+        <button onclick="baixo()">baixo</button>
+    </div>
+    <div class="direcao">
+        <button onclick="coluna()">colunas</button>
+        <button onclick="linha()">linhas</button>
+    </div>
+    
+    <input type="text" id="texto-input" value="AÇÚCAR ADICIONADO" placeholder="Digite seu ROTULO..." maxlength="30">
+
+    <div class="text">
+        <button onclick="adicionarTexto()">Adicionar Texto</button>
+        <button onclick="limparTexto()">limpar rotulos</button>
+    </div>
+    <button class="baixar" onclick="baixarImagem()">Baixar</button>
+  </div>
+  <!-- Rodapé do site -->
+<footer>
+  Criado por <a href="https://github.com/viquituor" rel="noopener" target="_blank" >Paulo Victor Almeida</a><br>
+  <span>
+    Veja o código no <a href="https://github.com/viquituor/Gerador-ALTOEM" rel="noopener" target="_blank">GitHub</a>
+  </span>
+</footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
