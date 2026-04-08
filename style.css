@@ -9,9 +9,11 @@
       min-height: 100vh;
       background-color: #f4f4f9;
       margin: 0;
+      overflow:scroll;
     }
 
     #embalagem-preview {
+      
       background: white;
       border: 4px solid #1c1c1c;
       border-radius: 20px;
